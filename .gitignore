@@ -162,4 +162,4 @@ cython_debug/
 #
 scripts/map_plots/*
 scripts/yamls/*
-
+*.DS_Store

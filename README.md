@@ -26,7 +26,7 @@ The algorithm in this repo named `MCBO` is designed for just near-noiseless envi
 noisy environments. 
 
 In the synthetic function network experiments the following algorithms are supported: 
-`Random`, `UCB`, `GP-MW`, `MCBO`, `CBO-MW`. 
+`Random`, `UCB`, `GP-MW`, `NMCBO`, `CBO-MW`. 
 
 In the bikes experiments, the following algorithms are supported: `Random`, `D-GP-MW`,
 `D-CBO-MW`. 
@@ -36,7 +36,7 @@ In the bikes experiments, the following algorithms are supported: `Random`, `D-G
 In this folder, 
 - `mcbo_trial.py` implements the environment interaction loop. This is modified from the 
 [MCBO](https://github.com/ssethz/mcbo) library. 
-- `models/gp_network.py` contains the class for fitting GPs for EIFN and MCBO
+- `models/gp_network.py` contains the class for fitting GPs for `NMCBO`
 - `models/eta_network.py` contains the training loop for the custom optimizer used for
 optimizing the acquisition function in `NMCBO`, or updating the weights in `CBO-MW` 
 methods. All other methods use default BOTorch optimizers. 
